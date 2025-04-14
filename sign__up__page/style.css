@@ -1,0 +1,202 @@
+*{
+    font-family: font;
+    
+    
+}
+@font-face {
+    src: url(fonts/);
+    font-family: font;
+}
+@font-face{
+    src:url(Fonts/Mulat\ Addis\ 2\ Bold.ttf);
+    font-family:Zibriqriq;
+}
+.form__container{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+.form__login__elements{
+    top:0;
+    height: 95%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.5));
+    padding: 30px 40px;
+}
+.form__signin__elements{
+
+    margin:0px 50px;
+    height: 100%;
+    background: white;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.5));
+    border-radius: 20px;
+    padding:15px 40px;
+}
+.form__login__inputs{
+    outline: none;
+    border: black;
+    background-color: rgb(206, 206, 206);
+    padding:15px;
+    border-radius: 5px;
+}
+.form__signin__inputs{ 
+    border: none;
+    padding:15px;
+    background-color: rgb(206, 206, 206);
+    outline: none;
+    margin: 10px auto;
+    border-radius: 5px;
+    
+}
+.form__signin__elements h1{
+    font-size:3rem;
+    background: white;
+    font-weight:lighter;
+}
+.input__lable{
+    background: white;
+}
+.form__login__elements h1{
+    font-size:4rem;
+    background: white;
+}
+#form__address{
+    width:90%;
+}
+.form__login__button{
+    position: relative;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    background-image:linear-gradient(to right, rgb(99, 93, 93) 0%, rgb(0, 0, 0) 90%);
+    margin-top:2rem;
+    border-radius: 15px;
+    border: none;
+    transition:all 0.35sec;
+    outline: none;
+    width: 100%;
+}
+.form__login__button:after{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-image:linear-gradient(to right, rgb(250, 0, 0) 0%, rgb(255, 115, 0) 90%);
+    transition: 0.35s;
+    border-radius:15px;
+    z-index:1;
+}
+.form__login__button:hover{
+    color:white;
+}
+.form__login__button:hover:after{
+    width:100%;
+    z-index: 1;
+}
+.form__login__button__link{
+    color: white;
+    background-color: none;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    position:relative;
+    z-index: 99;
+    font-weight: bold;
+}
+.form__signin__button{
+    position: absolute;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    background-image:linear-gradient(to right, rgb(99, 93, 93) 0%, rgb(0, 0, 0) 90%);
+    right:50px;
+    border-radius: 20px;
+    border: none;
+    transition:all 0.35sec;
+    outline: none;
+    width: 40%;
+}
+.form__signin__button:after{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-image:linear-gradient(to right, rgb(250, 0, 0) 0%, rgb(255, 115, 0) 90%);
+    transition: 0.35s;
+    border-radius:20px;
+    z-index:1;
+}
+.form__signin__button:hover{
+    color:white;
+}
+.form__signin__button:hover:after{
+    width:100%;
+}
+.form__signin__button__link{
+    color: white;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    position:relative;
+    z-index: 99;
+    font-weight: bold;
+}
+.form__color__shifter{
+    padding: 10px;
+    height: 97%;
+    left: 35px;
+    width:43%;
+    font-family: zibriqriq;
+    font-weight: bold;
+    background-image:linear-gradient(to top, rgb(255, 2, 2) 0%, rgb(255, 230, 0) 100%);
+    z-index: 999;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 1s;
+}
+.form__color__shifter.active{
+    padding: 10px;
+    height: 97%;
+    left: 33%;
+    width:63%;
+    font-family: zibriqriq;
+    font-weight: bold;
+    background-image:linear-gradient(to top, rgb(255, 2, 2) 0%, rgb(255, 230, 0) 100%);
+    z-index: 999;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 1s;
+}
+.login__link{
+    border:none;
+    outline: none;
+    color:blue;
+    background: white;
+    cursor: pointer;
+}
+.signin__link{
+    border:none;
+    outline: none;
+    color:blue;
+    background: white;
+    cursor: pointer;
+}
