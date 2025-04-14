@@ -173,6 +173,7 @@
     background-color: black;
 }
 .main__container{
+    height: 100vh;
     display: grid;
     grid-template-columns:1fr 1fr;
     justify-self: center;
@@ -183,8 +184,15 @@
     max-width: 1300px;
     padding: 0 50px;
 }
+.main__content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
 .main__content h1{
-    font-size: 6rem;
+    font-size: 10rem;
     font-family: zibriqriq;
     background-color: rgb(255, 95, 2);
     background-image:linear-gradient(to top, rgb(255, 95, 2) 0%, rgb(255, 230, 0) 100%);
@@ -230,6 +238,7 @@
     border: none;
     transition:all 0.35sec;
     outline: none;
+
 }
 .main__btn__link{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
